@@ -153,4 +153,20 @@ print(f"Valor total da dívida: {valor_original + total_juros}") """
 
 """ Interrompendo a Repetição
 Embora seja util, a estrutura while só verifica sua condição de para no inicio de cada repitição
-Dependendo do problema, a habilidade de terminar o while dentro do bloco a repetir pode ser interessante"""
+Dependendo do problema, a habilidade de terminar o while dentro do bloco a repetir pode ser interessante 
+A instrução break é utilizada par interromper a execução do while independente do valor atual de sua condição 
+Exemplo.:"""
+
+""" s = 0
+while True:
+    v = int(input("Digite um valor ou 0 para sair : "))
+    if v == 0:
+        break
+    s += v
+
+    print(s)
+ """
+
+""" Exercicio 1
+Escreva um programa para controlar uma pequena maquina registradora. Você deve solicitar ao usuario que digite o código do produto e a quantidade comprada
+"""

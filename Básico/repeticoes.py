@@ -72,10 +72,85 @@ print(f'O resultado da multiplicação é.: {resultado}')
  adicionado é constante e nos acumuladores, variavel. """
 # Exemplo
 
-n = 1
+""" n = 1
 soma = 0
 while n <= 10:
     x = int(input(f"Digite o {n} numero: "))
-    soma += x
-    n += 1
-print(f"Soma.: {soma}")
+    soma += x # Acumulador
+    n += 1 # é Um contador
+print(f"Soma.: {soma}") """
+
+# Ao Invés de usarmos cinco variaveis, vamos acumular os valores à medida que são lidos.
+
+""" x = 1
+soma = 0
+while x <= 5:
+    n = int(input(f"{x} Digite um número.:"))
+    soma += n
+    x += 1
+print(f"A média é {soma / 5:5.2f}")
+ """
+""" Exercicio 1 
+Escreva um programa que pergunte o depósito inicial e a taxa de juros de uma poupança
+Exiba os valores mês a mês para os primeiros 24 meses. Escreva o Total de Juros Ganho no  Periodo"""
+
+""" deposito_inicial = float(input("Insira o valor do deposito.: "))
+taxa_juros = float(input("Insira o valor dos Juros Mensais.: "))
+x = 0
+saldo = deposito_inicial
+total_juros = 0
+
+while x < 24:
+    juros = deposito_inicial + taxa_juros / 100
+    saldo += juros
+    total_juros += juros
+    x += 1
+    print(f"Saldo no Mẽs {x} .: {saldo:10.2f}")
+print(f"Total de Juros Ganho foi de {total_juros:2f}")
+ """
+
+""" Exercicio 2
+Altere o programa anterior de forma que ele também peça o deposito mensal, e esse valor será depositado no inicio de cada
+mês, e você deve considera=lo para o calculo de juros do Mês seguinte"""
+
+
+""" deposito_inicial = float(input("Insira o valor do deposito.: "))
+taxa_juros = float(input("Insira o valor dos Juros Mensais.: "))
+deposito_mensal = float(input("Insira o valor do deposito mensal: "))
+x = 0
+saldo = deposito_inicial
+total_juros = 0
+
+while x < 24:
+    juros = deposito_inicial + taxa_juros / 100
+    saldo += juros + deposito_mensal
+    total_juros += juros
+    x += 1
+    print(f"Saldo no Mẽs {x} .: {saldo:10.2f}")
+print(f"Total de Juros Ganho foi de {total_juros:0.2f}") """
+
+""" Exercicio 3 
+Escreva um Programa que pergunte o valor inicial de uma divida e o juro mensal.
+Pergunte também o valor mensal que será pago. Imprima o  número de meses para que a dívida seja paga, o total de juros e o valor total da divida."""
+
+""" valor_original = float(input("Insira o valor inical da dívida.: "))
+juros_mensais = float(input("Insira o valor dos Juros Mensais.: "))
+valor_mensal = float(input("Insira o valor do valor mensal.: "))
+x = 0
+total_juros = 0
+total_divida = 0
+divida = valor_original
+
+while divida > 0:
+    juros = valor_original * (juros_mensais / 100)
+    total_juros += juros
+    divida += juros_mensais - valor_mensal
+    x += 1
+
+print(f"Número de meses para pagar a dívida: {x}")
+print(f"Total de juros pagos: {total_juros:0.2f}")
+print(f"Valor total da dívida: {valor_original + total_juros}") """
+
+""" Interrompendo a Repetição
+Embora seja util, a estrutura while só verifica sua condição de para no inicio de cada repitição
+Dependendo do problema, a habilidade de terminar o while dentro do bloco a repetir pode ser interessante"""

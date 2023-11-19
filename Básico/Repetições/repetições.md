@@ -60,3 +60,14 @@ Exemplo.:
         s += v
     print(s)
 
+## Repetições Aninhadas 
+
+Podemos combinar vários while de forma a obter resultador mais interessantes  como a repetição com incremento de duas váriaveis. Imagine imprimir as tabuadas de multiplicação de 1  a 10. Exemplo:
+
+    tabuada = 1
+    while tabuada<=10:
+        numero = 1 
+        while numero<=10:
+            print(f"{tabuada} X {numero} = {tabuada * numero}")
+        numero+=1
+    tabuada+=1    

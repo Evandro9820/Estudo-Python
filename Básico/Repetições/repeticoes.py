@@ -170,3 +170,11 @@ while True:
 """ Exercicio 1
 Escreva um programa para controlar uma pequena maquina registradora. Você deve solicitar ao usuario que digite o código do produto e a quantidade comprada
 """
+
+tabuada = 1
+while tabuada <= 10:
+    numero = 1
+    while numero <= 10:
+        print(f"{tabuada} X {numero} = {tabuada * numero}")
+        numero += 1
+    tabuada += 1

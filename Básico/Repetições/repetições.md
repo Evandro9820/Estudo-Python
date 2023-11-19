@@ -60,4 +60,3 @@ Exemplo.:
         s += v
     print(s)
 
-    ]
